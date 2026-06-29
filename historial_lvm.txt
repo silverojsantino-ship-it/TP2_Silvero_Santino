@@ -1,0 +1,71 @@
+    1  fdisk
+    2  sudo fdisk -l
+    3  sudo fdisk /dev/sdd
+    4  sudo fdisk -l /dev/sdd
+    5  free -h
+    6  sudo mkswap /dev/sdd1
+    7  free -h
+    8  swapon -s
+    9  cat /proc/swaps
+   10  sudo swapon /dev/sdd1
+   11  cat /proc/swaps
+   12  free -h
+   13  sudo fdisk /dev/sdc
+   14  sudo wipefs -a /dev/sdc1
+   15  sudo wipefs -a /dev/sdc2
+   16  sudo pvcreate /dev/sdd2 /dev/sdd3 /dev/sdd5 /dev/sdd6 /dev/sdc1 /dev/sdc2
+   17  sudo pvs
+   18  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   19  sudo vgs
+   20  sudo pvs
+   21  sudo vgcreate vg_web /dev/sdc2
+   22  sudo pvs
+   23  sudo lvcreate -L 1G vg_web -n lv_web1
+   24  sudo lvcreate -L 512M vg_web -n lv_web2
+   25  sudo lvcreate -L 512M vg_web -n lv_web3
+   26  sudo lvs
+   27  sudo fdisk -l
+   28  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   29  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   30  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web3
+   31  ssh-keygen -t ed25519 -C silvero.j.santino@gmail.com
+   32  cat ~/.ssh/id_ed25519.pub
+   33  git git config --global user.name "Santino"
+   34  git config --global user.name "Santino"
+   35  git config --global user.email "silvero.j.santino@gmail.com"
+   36  ls -l
+   37  cd carpeta_compartida/
+   38  git clone git@github.com:silverojsantino-ship-it/TP2_Silvero_Santino.git
+   39  ls -l
+   40  cd TP2_Silvero_Santino/
+   41  ls -l
+   42  sudo pvs > pvs.txt
+   43  sudo vgs > vgs.txt
+   44  sudo lvs > lvs.txt 
+   45  history > historial_lvm.txt
+   46  ls -l
+   47  git add .
+   48  git commit -m "Subo txts"
+   49  git push 
+   50  git log --oneline
+   51  ls -l
+   52  cd ..
+   53  rm -r TP2_Silvero_Santino/
+   54  ls -l
+   55  cd ..
+   56  ls -l
+   57  cd carpeta_compartida/
+   58  ls -l
+   59  git clone git@github.com:silverojsantino-ship-it/TP2_Silvero_Santino.git
+   60  cd TP2_Silvero_Santino/
+   61  ls -l}
+   62  ls -l
+   63  sudo pvs > pvs.txt
+   64  ls -l
+   65  sudo pvs > pvs.txt
+   66  ls -l
+   67  sudo vgs > vgs.txt
+   68  ls -l
+   69  sudo lvs > lvs.txt
+   70  ls -l
+   71  history > historial_lvm.txt
